@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.classList.remove('open');
     toggle?.classList.remove('open');
     toggle?.setAttribute('aria-expanded', 'false');
+    toggle?.setAttribute('aria-label', '開啟導覽選單');
     document.body.classList.remove('menu-open');
   }));
 
@@ -435,6 +436,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav?.classList.remove('open');
       toggle?.classList.remove('open');
       toggle?.setAttribute('aria-expanded', 'false');
+      toggle?.setAttribute('aria-label', '開啟導覽選單');
       document.body.classList.remove('menu-open');
       requestAnimationFrame(() => serviceInputs[0]?.focus());
     };

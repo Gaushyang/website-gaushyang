@@ -23,11 +23,13 @@
   <meta name="twitter:image" content="https://website-gaushyang.pages.dev/images/gaushyang-ai-park.jpg">
 
   <link rel="icon" href="images/gaushyang-logo.jpg" type="image/jpeg">
-  <link rel="preload" as="image" href="images/hero/cape-of-good-hope.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="images/signal-horizon.webp" type="image/webp" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="enterprise.css?v=20260922-solutions-merged">
+  <link rel="stylesheet" href="signal.css?v=20260922">
+  <script src="signal.js?v=20260922" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>
 
   <!-- JSON-LD 結構化資料 -->
@@ -57,7 +59,7 @@
   }
   </script>
 </head>
-<body>
+<body class="signal-home">
   <a class="skip-link" href="#main">跳至主要內容</a>
 
   <!-- 頂部導覽列 (Site Header) -->
@@ -72,7 +74,20 @@
       </button>
       <nav id="site-nav" class="site-nav" aria-label="主要導覽">
         <a href="#company">關於與經驗</a>
-        <a href="#solutions">方案與交付</a>
+        <div class="nav-solutions">
+          <button class="mega-toggle" type="button" aria-expanded="false" aria-controls="solutions-menu">方案與交付 <span aria-hidden="true">+</span></button>
+          <div class="mega-menu" id="solutions-menu" hidden>
+            <div class="mega-intro"><span>OUR EXPERTISE</span><h2>每個場域，<br>都有連結的可能。</h2><a href="#solutions">探索所有通訊方案 ↗</a></div>
+            <div class="mega-links">
+              <a href="services/ran-construction.html"><small>01 / MOBILE NETWORK</small><b>行動網路與基地台建設 <span>↗</span></b></a>
+              <a href="services/network-optimization.html"><small>02 / OPTIMIZATION</small><b>5G 網路優化與量測 <span>↗</span></b></a>
+              <a href="services/indoor-coverage.html"><small>03 / INDOOR COVERAGE</small><b>室內涵蓋與專網方案 <span>↗</span></b></a>
+              <a href="services/satellite-communication.html"><small>04 / SATELLITE</small><b>低軌衛星通訊整合 <span>↗</span></b></a>
+              <a href="services/c-ran-integration.html"><small>05 / INFRASTRUCTURE</small><b>C-RAN 機房整合 <span>↗</span></b></a>
+              <a href="#process"><small>FROM PLAN TO DELIVERY</small><b>工程合作與交付流程 <span>↗</span></b></a>
+            </div>
+          </div>
+        </div>
         <a href="#strength">安全與人才</a>
         <a href="#about">關於與永續</a>
         <button class="nav-contact-btn contact-modal-open" type="button">預約現場會勘 <span>↗</span></button>
@@ -82,26 +97,23 @@
 
   <main id="main">
     <!-- 【第 1 順位】首頁定位、主次 CTA、實績數據與定義 (WEB-006, WEB-010, WEB-011) -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-media" aria-hidden="true"></div>
-      <div class="hero-shade"></div>
-      <div class="hero-grid"></div>
-
+    <section class="hero signal-hero" aria-labelledby="hero-title">
+      <div class="signal-atmosphere" aria-hidden="true"></div>
       <div class="container hero-layout">
-        <!-- 左側主標與行動 -->
         <div class="hero-content">
-          <p class="eyebrow light">TELECOMMUNICATION INFRASTRUCTURE SPECIALIST</p>
-          <h1 id="hero-title">讓關鍵通訊，<br><em>持續連線</em></h1>
-          <p class="hero-lead">深耕台灣通訊工程逾 38 年，從基地台建置、C-RAN 機房到低軌衛星整合，以電信級標準與嚴格工安流程，打造高韌性且穩定可靠的網路基礎設施。</p>
+          <p class="eyebrow light">GAUSHYANG TELECOM / SINCE 1987</p>
+          <h1 id="hero-title">連結地面，<br><em>延伸可能。</em></h1>
+          <p class="hero-lead">從城市基地台到低軌衛星。<br>以扎實工程，讓每一次關鍵通訊持續連線。</p>
           <div class="hero-actions">
-            <button class="button button-primary contact-modal-open" type="button">預約現場會勘 / 取得評估 <span>→</span></button>
-            <a class="text-link light" href="#solutions">探索通訊方案 <span>↘</span></a>
+            <a class="button button-white" href="#solutions">探索通訊方案 <span>↗</span></a>
+            <button class="button signal-secondary contact-modal-open" type="button">預約現場會勘 <span>↗</span></button>
           </div>
         </div>
-
       </div>
-
-      <!-- 【第 2 順位】關鍵實績數據與口徑定義 (WEB-011 強化成果數據定義) -->
+      <div class="hero-coordinate" aria-hidden="true"><span>GROUND TO SPACE</span><span>↙</span></div>
+      <div class="hero-bottom"><span>通訊基礎建設，從現場走向未來。</span><a href="#company">向下探索 ↓</a></div>
+    </section>
+    <section class="signal-proof" aria-label="工程經驗與服務範圍">
       <div class="hero-facts" aria-label="公司重點實績數據">
         <div class="fact-item">
           <strong>38<sup>+</sup> 年</strong>
@@ -121,59 +133,15 @@
       </div>
     </section>
 
-    <!-- 品牌粒子波與視覺轉場 (Brand Reveal) -->
-    <section id="brand-reveal" class="brand-reveal" aria-label="高祥電信品牌轉場">
-      <div class="brand-reveal-stage">
-        <canvas class="brand-signal-canvas" aria-hidden="true"></canvas>
-        <div class="brand-reveal-shade"></div>
-        <svg class="brand-reveal-mask" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <defs>
-            <mask id="gaushyang-word-mask">
-              <rect width="1600" height="900" fill="white"></rect>
-              <g class="brand-mask-word"><text x="800" y="520" text-anchor="middle">gaushyang</text></g>
-            </mask>
-            <radialGradient id="gaushyang-mask-surface" cx="50%" cy="42%" r="68%">
-              <stop offset="0%" stop-color="#23143d"></stop>
-              <stop offset="58%" stop-color="#14152e"></stop>
-              <stop offset="100%" stop-color="#080d20"></stop>
-            </radialGradient>
-            <linearGradient id="gaushyang-inner-surface" x1="0" y1="0" x2="0.9" y2="1">
-              <stop offset="0%" stop-color="#7cecff" stop-opacity="0.08"></stop>
-              <stop offset="48%" stop-color="#00d2ff" stop-opacity="0.2"></stop>
-              <stop offset="100%" stop-color="#176fbd" stop-opacity="0.08"></stop>
-            </linearGradient>
-            <filter id="gaushyang-inner-glow" x="0" y="0" width="100%" height="100%">
-              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="soft-blur"></feGaussianBlur>
-              <feComposite in="soft-blur" in2="SourceGraphic" operator="in" result="inner-softness"></feComposite>
-              <feFlood flood-color="#00d2ff" flood-opacity="0.46" result="inner-color"></feFlood>
-              <feComposite in="inner-color" in2="inner-softness" operator="in" result="inner-light"></feComposite>
-              <feMerge>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-                <feMergeNode in="inner-light"></feMergeNode>
-              </feMerge>
-            </filter>
-          </defs>
-          <rect width="1600" height="900" fill="url(#gaushyang-mask-surface)" mask="url(#gaushyang-word-mask)"></rect>
-          <g class="brand-mask-highlight brand-mask-word"><text x="800" y="520" text-anchor="middle">gaushyang</text></g>
-          <g class="brand-mask-emblem"><path d="M275 378L306 400L267 407Z"></path></g>
-        </svg>
-        <div class="brand-reveal-copy">
-          <p>GAUSHYANG TELECOM</p>
-          <h2>每一次連線，<br>都是我們對可靠的承諾</h2>
-        </div>
-        <div class="brand-scroll-cue" aria-hidden="true"><span>SCROLL TO EXPLORE</span><b></b></div>
-      </div>
-    </section>
-
-    <!-- 關於定位與核心優勢 -->
     <section id="company" class="intro section">
       <div class="container intro-grid reveal">
+        <figure class="company-landscape"><img src="images/hero/cape-of-good-hope.webp" alt="海岸風力發電與通訊工程服務環境" loading="lazy" width="1200" height="800"><figcaption>立足台灣，連結每一個需要的地方。</figcaption></figure>
         <div>
           <p class="eyebrow">WHO WE ARE</p>
           <p class="section-index">01</p>
         </div>
         <div>
-          <h2>專注通訊工程，<br>成為值得信任的長期夥伴。</h2>
+          <h2>看不見的訊號，<br>看得見的工程實力。</h2>
           <p class="large-copy">高祥電信服務台灣電信營運商與企業場域，累積跨世代通訊建設經驗，理解不同設備、場地與營運條件下的工程需求。</p>
           <div class="intro-highlights">
             <div class="highlight-item">
@@ -203,7 +171,7 @@
             <p class="section-index">02</p>
           </div>
           <div>
-            <h2>從場域需求，<br>找到通訊方案。</h2>
+            <h2>從地面到太空。<br>連結，沒有單一解法。</h2>
             <p>從常見需求與評估重點選擇方案，點入了解工程方法、驗收方式與交付內容。</p>
           </div>
         </div>
@@ -276,7 +244,7 @@
           <h3 id="confidentiality-title">專業交付，也尊重每一份託付。</h3>
           <p>基於客戶保密約定，部分專案名稱、場址、設備配置與現場影像不予公開。本網站以可公開的工程能力、應用場景與品質管理方式說明服務；如需進一步評估合作，我們可於確認揭露範圍後，提供適當的技術說明與資料。</p>
           <div class="solutions-contact-actions">
-            <button class="button button-primary contact-modal-open" type="button">預約工程諮詢 <span>→</span></button>
+            <button class="button button-primary contact-modal-open" type="button">預約現場會勘 <span>→</span></button>
             <a class="text-link light" href="#process">了解合作流程 <span>↓</span></a>
           </div>
         </aside>
@@ -291,7 +259,7 @@
             <p class="eyebrow">DELIVERY PROCESS</p>
           </div>
           <div>
-            <h2>合作五階段，<br>交付清楚可追溯。</h2>
+            <h2>讓每一步，<br>都有可靠的下一步。</h2>
             <p>從確認場域條件到完成點交，五個階段讓您掌握合作進度與各階段可取得的文件。</p>
           </div>
         </div>
@@ -346,7 +314,7 @@
             <p class="section-index">03</p>
           </div>
           <div>
-            <h2>制度化安全管理，<br>專業資質與實務經驗。</h2>
+            <h2>可靠的背後，<br>是毫不妥協的標準。</h2>
             <p>依專案需求配置工安管理、專業人員與量測儀器，並以檢查紀錄及測試報告支持工程驗收。</p>
           </div>
         </div>
@@ -567,7 +535,7 @@
             <p class="section-index">04</p>
           </div>
           <div>
-            <h2>深耕台灣三十八載，<br>走在通訊演進的最前線。</h2>
+            <h2>通訊一直演進。<br>我們，一直在現場。</h2>
           </div>
         </div>
 
@@ -635,14 +603,14 @@
 
     <!-- 【第 8 順位】會勘預約、聯絡需求與全域表單 (WEB-004, WEB-006 Contact) -->
     <section id="contact" class="contact section">
-      <canvas id="contact-wave-canvas" class="contact-wave-canvas" aria-hidden="true"></canvas>
+
       <div class="contact-wave-overlay" aria-hidden="true"></div>
       <div class="container contact-inner reveal">
         <p class="eyebrow light">START A CONVERSATION</p>
-        <h2>一起建構下一個<br>可靠連線。</h2>
+        <h2>下一個連結，<br>從這裡開始。</h2>
         <p>無論是基地台新建、5G 網路優化、室內涵蓋或低軌衛星整合，歡迎預約專人現場會勘。</p>
         <div class="contact-actions">
-          <button id="contact-modal-open" class="button button-white contact-modal-open" type="button">預約現場會勘 / 專案詢價 <span>→</span></button>
+          <button id="contact-modal-open" class="button button-white contact-modal-open" type="button">預約現場會勘 <span>→</span></button>
           <a class="contact-phone" href="tel:+886222681177">
             <small>TEL (週一至週五 08:30–17:30)</small>
             +886 2 2268 1177
