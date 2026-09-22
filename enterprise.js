@@ -573,61 +573,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 8. 專案照片瀏覽器
-  document.querySelectorAll('[data-gallery-dialog]').forEach(galleryDialog => {
-    const galleryImage = galleryDialog.querySelector('[data-gallery-image]');
-    const galleryCaption = galleryDialog.querySelector('[data-gallery-caption]');
-    const galleryCount = galleryDialog.querySelector('[data-gallery-count]');
-    const galleryThumbnails = [...galleryDialog.querySelectorAll('[data-gallery-thumbnail]')];
-    const galleryTriggers = document.querySelectorAll(`[data-gallery-target="${galleryDialog.id}"]`);
-    if (!galleryImage || !galleryCaption || !galleryCount || !galleryThumbnails.length) return;
-
-    let galleryIndex = 0;
-    let galleryTrigger = null;
-
-    const showGalleryImage = index => {
-      galleryIndex = (index + galleryThumbnails.length) % galleryThumbnails.length;
-      const thumbnail = galleryThumbnails[galleryIndex];
-      galleryImage.src = thumbnail.dataset.full;
-      galleryImage.alt = thumbnail.dataset.alt;
-      galleryCaption.textContent = thumbnail.dataset.caption;
-      galleryCount.textContent = `${galleryIndex + 1} / ${galleryThumbnails.length}`;
-      galleryThumbnails.forEach((item, itemIndex) => {
-        const isCurrent = itemIndex === galleryIndex;
-        item.classList.toggle('is-current', isCurrent);
-        if (isCurrent) item.setAttribute('aria-current', 'true');
-        else item.removeAttribute('aria-current');
-      });
-    };
-
-    const closeGallery = () => galleryDialog.close();
-    galleryTriggers.forEach(trigger => trigger.addEventListener('click', () => {
-      galleryTrigger = trigger;
-      showGalleryImage(0);
-      galleryDialog.showModal();
-      document.body.classList.add('gallery-dialog-open');
-      requestAnimationFrame(() => galleryDialog.querySelector('[data-gallery-close]')?.focus());
-    }));
-
-    galleryDialog.querySelector('[data-gallery-close]')?.addEventListener('click', closeGallery);
-    galleryDialog.querySelector('[data-gallery-previous]')?.addEventListener('click', () => showGalleryImage(galleryIndex - 1));
-    galleryDialog.querySelector('[data-gallery-next]')?.addEventListener('click', () => showGalleryImage(galleryIndex + 1));
-    galleryThumbnails.forEach((thumbnail, index) => thumbnail.addEventListener('click', () => showGalleryImage(index)));
-    galleryDialog.addEventListener('click', event => {
-      if (event.target === galleryDialog) closeGallery();
-    });
-    galleryDialog.addEventListener('keydown', event => {
-      if (event.key === 'ArrowLeft') showGalleryImage(galleryIndex - 1);
-      if (event.key === 'ArrowRight') showGalleryImage(galleryIndex + 1);
-      if (event.key === 'Home') showGalleryImage(0);
-      if (event.key === 'End') showGalleryImage(galleryThumbnails.length - 1);
-    });
-    galleryDialog.addEventListener('close', () => {
-      document.body.classList.remove('gallery-dialog-open');
-      galleryTrigger?.focus();
-    });
-  });
-
   // 9. 隱私權政策與個資告知彈窗 (Privacy Dialog)
   const privacyDialog = document.getElementById('privacy-dialog');
   const openPrivacyLink = document.getElementById('open-privacy-link');

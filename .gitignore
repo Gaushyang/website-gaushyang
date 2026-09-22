@@ -4,3 +4,12 @@
 
 # Local Netlify folder
 .netlify
+# Retired client-project assets: keep originals in the external backup only.
+/images/oneweb-gallery/
+/images/das-gallery/
+/images/history-2022.jpg
+/demo/建設.png
+/demo/combiner.png
+/demo/oneweb.png
+/低軌衛星(oneweb)/
+/室內分散式天線系統 (DAS)/
