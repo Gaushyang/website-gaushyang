@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="enterprise.css?v=20260829-brightness-144">
+  <link rel="stylesheet" href="enterprise.css?v=20260922-content-refresh">
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>
 
   <!-- JSON-LD 結構化資料 -->
@@ -169,24 +169,24 @@
     <section id="company" class="intro section">
       <div class="container intro-grid reveal">
         <div>
-          <p class="eyebrow">WHO WE ARE &amp; TRACK RECORD</p>
+          <p class="eyebrow">WHO WE ARE</p>
           <p class="section-index">01</p>
         </div>
         <div>
-          <h2>不只完成工程，<br>更確保每一次連線可靠。</h2>
-          <p class="large-copy">高祥電信是台灣電信營運商與企業通訊基礎設施的長期夥伴。我們整合規劃、施工、量測與維運能力，協助客戶把嚴格複雜的網路標準落實為穩定運作的工程成果。</p>
+          <h2>專注通訊工程，<br>成為值得信任的長期夥伴。</h2>
+          <p class="large-copy">高祥電信服務台灣電信營運商與企業場域，累積跨世代通訊建設經驗，理解不同設備、場地與營運條件下的工程需求。</p>
           <div class="intro-highlights">
             <div class="highlight-item">
-              <b>一站式工程承攬</b>
-              <p>單一窗口串接現勘、結構補強、設備安裝、訊號路測至竣工驗收。</p>
+              <b>單一合作窗口</b>
+              <p>由專案窗口協調工程需求與現場介面，讓合作溝通有明確對象。</p>
             </div>
             <div class="highlight-item">
-              <b>電信級工安規範</b>
-              <p>全員合格防墜裝備、專業作業主管常駐督導與每日標準危害分析。</p>
+              <b>跨場域實務經驗</b>
+              <p>從軌道沿線、都會機房到大型展館，因應不同場地與營運限制。</p>
             </div>
             <div class="highlight-item">
-              <b>多世代設備整合</b>
-              <p>具備 4G/5G 基地台、C-RAN 光纖機房及 OneWeb 低軌衛星地面站實戰經驗。</p>
+              <b>多品牌設備經驗</b>
+              <p>具備 Ericsson、Nokia 與 OneWeb 設備的安裝及測試經驗。</p>
             </div>
           </div>
         </div>
@@ -201,14 +201,14 @@
             <p class="eyebrow">SELECTED PROJECTS</p>
           </div>
           <div>
-            <h2>走進複雜現場，<br>交付可驗證的工程實績。</h2>
-            <p>從高速鐵路沿線、都會核心密集區到偏遠離島，高祥團隊克服嚴苛限制，以扎實的工程品質通過驗收。</p>
+            <h2>每個現場，<br>都有實績可循。</h2>
+            <p>從軌道沿線、都會機房到公部門屋頂與大型展館，看看不同現場的限制與完成紀錄。</p>
           </div>
         </div>
 
         <div class="cases-grid">
           <!-- 案例 1 -->
-          <article class="case-card reveal">
+          <article id="project-ran" class="case-card reveal">
             <div class="case-media">
               <img src="demo/建設.png" alt="4G/5G 基地台設備置換與高空吊掛工程現場" loading="lazy" decoding="async">
               <span class="case-badge">實際工程案例</span>
@@ -220,24 +220,16 @@
               </div>
               <h3>北部軌道沿線 5G 基地台快速置換與優化</h3>
               <div class="case-details">
-                <div class="detail-row">
-                  <b>場域挑戰：</b>
-                  <span>深夜斷電施工窗口僅 3 小時，高空作業受限於風速與防墜標準，需精準掌握工期。</span>
-                </div>
-                <div class="detail-row">
-                  <b>工程內容：</b>
-                  <span>Site Survey 現況評估、鋼構吊架補強、5G Massive MIMO 天線與 RRU 置換、低損耗跳線配置及路測。</span>
-                </div>
-                <div class="detail-row">
-                  <b>交付指標：</b>
-                  <span>於核定施工窗口內完成設備置換、測試與復原，交付施工紀錄及路測結果供業主驗收。</span>
-                </div>
+                <div class="detail-row"><b>場域：</b><span>北部軌道沿線既有 5G 站點。</span></div>
+                <div class="detail-row"><b>挑戰：</b><span>深夜斷電窗口僅 3 小時，需兼顧高空作業條件與復原時程。</span></div>
+                <div class="detail-row"><b>成果：</b><span>於核定窗口內完成置換、測試與復原，提交施工紀錄及路測結果。</span></div>
               </div>
+              <a class="case-service-link" href="services/ran-construction.html">了解相關工程方案 <span aria-hidden="true">→</span></a>
             </div>
           </article>
 
           <!-- 案例 2 -->
-          <article class="case-card reveal">
+          <article id="project-cran" class="case-card reveal">
             <div class="case-media">
               <img src="demo/combiner.png" alt="都會區 C-RAN 集中式機房與光纖傳輸整合現場" loading="lazy" decoding="async">
               <span class="case-badge">實際工程案例</span>
@@ -249,55 +241,39 @@
               </div>
               <h3>都會核心區 C-RAN 集中式機房與光纖傳輸整合</h3>
               <div class="case-details">
-                <div class="detail-row">
-                  <b>場域挑戰：</b>
-                  <span>市中心機房管道空間受限、多營運商訊號共構，光纖熔接與傳輸衰減容許值極為嚴苛。</span>
-                </div>
-                <div class="detail-row">
-                  <b>工程內容：</b>
-                  <span>主幹光纜佈設、Combiner 合波器線路整合、機櫃電力路由配置、OTDR 高精度光損量測。</span>
-                </div>
-                <div class="detail-row">
-                  <b>交付指標：</b>
-                  <span>完成光纖與射頻鏈路量測，依專案規範提交 OTDR、端口測試與設備標示紀錄。</span>
-                </div>
+                <div class="detail-row"><b>場域：</b><span>都會核心區集中式機房與光纖傳輸鏈路。</span></div>
+                <div class="detail-row"><b>挑戰：</b><span>管道空間受限，需協調多營運商共構與光纖損耗要求。</span></div>
+                <div class="detail-row"><b>成果：</b><span>完成光纖與射頻鏈路量測，提交 OTDR、端口測試及設備標示紀錄。</span></div>
               </div>
+              <a class="case-service-link" href="services/c-ran-integration.html">了解相關工程方案 <span aria-hidden="true">→</span></a>
             </div>
           </article>
 
           <!-- 案例 3 -->
-          <article class="case-card reveal">
+          <article id="project-satellite" class="case-card reveal">
             <div class="case-media">
-              <img src="demo/oneweb.png" alt="偏遠山區與離島 OneWeb 低軌衛星地面終端站建置現場" loading="lazy" decoding="async">
+              <img src="demo/oneweb.png" alt="公部門屋頂 OneWeb 低軌衛星地面終端建置現場" loading="lazy" decoding="async">
             </div>
             <div class="case-body">
               <div class="case-meta">
                 <span class="case-tag">低軌衛星</span>
                 <span class="case-tag">應急韌性通訊</span>
               </div>
-              <h3>偏遠山區及離島 OneWeb 低軌衛星地面站建置</h3>
+              <h3>南部公部門 OneWeb 屋頂終端建置</h3>
               <div class="case-details">
-                <div class="detail-row">
-                  <b>實際場域：</b>
-                  <span>完成台南、高雄、嘉義等南部公部門跨場域屋頂站點，涵蓋單終端、雙終端與太陽能設施鄰近區域配置。</span>
-                </div>
-                <div class="detail-row">
-                  <b>工程內容：</b>
-                  <span>依屋頂結構及對空視角規劃終端位置，完成支撐基座、斜撐補強、戶外纜線、接地及防水箱體整合。</span>
-                </div>
-                <div class="detail-row">
-                  <b>完工確認：</b>
-                  <span>確認終端周圍遮蔽條件、設備固定與纜線收整，完成供電介接、終端啟用及通訊連線測試。</span>
-                </div>
+                <div class="detail-row"><b>場域：</b><span>台南、高雄、嘉義等公部門屋頂站點。</span></div>
+                <div class="detail-row"><b>挑戰：</b><span>依屋頂結構、對空視角及鄰近設施，安排單終端或雙終端配置。</span></div>
+                <div class="detail-row"><b>成果：</b><span>完成終端固定、供電介接與連線測試，留存各場域完工照片。</span></div>
               </div>
               <button class="case-gallery-open" type="button" data-gallery-target="oneweb-gallery-dialog" aria-haspopup="dialog" aria-controls="oneweb-gallery-dialog">
                 查看 6 張專案照片 <span aria-hidden="true">→</span>
               </button>
+              <a class="case-service-link" href="services/satellite-communication.html">了解相關工程方案 <span aria-hidden="true">→</span></a>
             </div>
           </article>
 
           <!-- 案例 4：南港展覽館一館多樓層室內涵蓋工程 -->
-          <article class="case-card reveal">
+          <article id="project-das" class="case-card reveal">
             <div class="case-media">
               <img src="images/history-2022.jpg" alt="南港展覽館一館場館外觀" loading="lazy" decoding="async">
             </div>
@@ -306,24 +282,16 @@
                 <span class="case-tag">室內涵蓋 DAS</span>
                 <span class="case-tag">大型展覽場館</span>
               </div>
-              <h3>大型園區室內涵蓋 DAS 專案</h3>
+              <h3>南港展覽館一館室內涵蓋 DAS 專案</h3>
               <div class="case-details">
-                <div class="detail-row">
-                  <b>專案場域：</b>
-                  <span>南港展覽館一館 1F、3F、4F、5F 與 6F，涵蓋展場、公共區域及會議空間。</span>
-                </div>
-                <div class="detail-row">
-                  <b>工程內容：</b>
-                  <span>分樓層現場會勘、設備點位與纜線路由確認、DOT 室內涵蓋設備及光纖配線建置，並依圖面完成跨樓層管線配置。</span>
-                </div>
-                <div class="detail-row">
-                  <b>專案紀錄：</b>
-                  <span>留存各樓層會勘照片、平面配置圖、管線昇位圖及完工照片，支援施工查驗與後續維護。</span>
-                </div>
+                <div class="detail-row"><b>場域：</b><span>南港展覽館一館 1F、3F、4F、5F 與 6F。</span></div>
+                <div class="detail-row"><b>挑戰：</b><span>展場、公共區域與會議空間跨樓層配置，需整合點位及管線路由。</span></div>
+                <div class="detail-row"><b>成果：</b><span>完成 DOT 設備與光纖配線建置，留存配置圖、管線昇位圖及完工照片。</span></div>
               </div>
               <button class="case-gallery-open" type="button" data-gallery-target="das-gallery-dialog" aria-haspopup="dialog" aria-controls="das-gallery-dialog">
                 查看 6 張專案照片 <span aria-hidden="true">→</span>
               </button>
+              <a class="case-service-link" href="services/indoor-coverage.html">了解相關工程方案 <span aria-hidden="true">→</span></a>
             </div>
           </article>
         </div>
@@ -343,12 +311,12 @@
       <div class="container">
         <div class="section-heading reveal">
           <div>
-            <p class="eyebrow light">SOLUTIONS &amp; DELIVERY</p>
+            <p class="eyebrow light">SOLUTIONS</p>
             <p class="section-index">02</p>
           </div>
           <div>
-            <h2>端到端的通訊<br>基礎建設解決方案</h2>
-            <p>從地面行動通訊、室內涵蓋到低軌衛星，我們以完整的工程鏈回應不同場景的連線挑戰。</p>
+            <h2>從場域需求，<br>找到通訊方案。</h2>
+            <p>選擇下方方案，深入了解適用情境、工程範圍、驗收重點與相關實績。</p>
           </div>
         </div>
 
@@ -358,9 +326,10 @@
             <div class="card-copy">
               <p>RADIO ACCESS NETWORK</p>
               <h3>行動網路與基地台建設</h3>
-              <span>4G/5G 基地台現勘、鋼構安裝、天饋線配置、設備上架、射頻調校與營運商驗收。</span>
+              <span>適用新站建置與既有設備汰換，支援行動網路建設及站台升級。</span>
+              <span class="solution-action">查看方案詳情 →</span>
             </div>
-            <b>↗</b>
+            <b aria-hidden="true">↗</b>
           </a>
 
           <a class="solution-card reveal" href="services/network-optimization.html" style="--image:url(background-image_2/5g-network-optimization.jpg)" aria-label="了解 5G 網路優化與量測服務">
@@ -368,9 +337,10 @@
             <div class="card-copy">
               <p>NETWORK OPTIMIZATION</p>
               <h3>5G 網路優化與量測</h3>
-              <span>Drive Test 訊號路測、頻譜干擾排查、天線下傾角調校、KPI 品質改善與性能評估。</span>
+              <span>針對弱覆蓋、干擾與連線不穩，找出問題並驗證改善結果。</span>
+              <span class="solution-action">查看方案詳情 →</span>
             </div>
-            <b>↗</b>
+            <b aria-hidden="true">↗</b>
           </a>
 
           <a class="solution-card reveal" href="services/indoor-coverage.html" style="--image:url(background-image_2/indoor-coverage-solution.jpg)" aria-label="了解室內涵蓋與專網方案">
@@ -378,9 +348,10 @@
             <div class="card-copy">
               <p>INDOOR CONNECTIVITY (DAS)</p>
               <h3>室內涵蓋與專網方案</h3>
-              <span>大型場館、商辦大樓、地下設施之分散式天線系統 (DAS) 佈建，解決室內訊號死角。</span>
+              <span>適用商辦、展館與地下空間，改善室內訊號死角。</span>
+              <span class="solution-action">查看方案詳情 →</span>
             </div>
-            <b>↗</b>
+            <b aria-hidden="true">↗</b>
           </a>
 
           <a class="solution-card reveal" href="services/satellite-communication.html" style="--image:url(background-image_2/satellite-communication.jpg)" aria-label="了解低軌衛星通訊整合服務">
@@ -388,48 +359,24 @@
             <div class="card-copy">
               <p>SATELLITE COMMUNICATION</p>
               <h3>低軌衛星通訊整合</h3>
-              <span>OneWeb 等低軌衛星地面終端（UT）基座結構施工、天線校準與應急通訊備援整合。</span>
+              <span>適用地面網路不足或需要備援的場域，評估第二通訊路徑。</span>
+              <span class="solution-action">查看方案詳情 →</span>
             </div>
-            <b>↗</b>
+            <b aria-hidden="true">↗</b>
           </a>
 
           <a class="solution-card solution-card-wide reveal" href="services/c-ran-integration.html" style="--image:url(background-image_2/c-ran-construction.jpg)" aria-label="了解 C-RAN 集中式機房施工整合服務">
             <div class="card-number">05</div>
             <div class="card-copy">
               <p>CENTRALIZED RADIO ACCESS NETWORK</p>
-              <h3>C-RAN 集中式機房施工整合</h3>
-              <span>集中化 BBU 機房設備整合、主幹光纜融接、電力路由規劃、遠端射頻單元安裝及全鏈路測試。</span>
+              <h3>C-RAN 機房整合</h3>
+              <span>適用機房擴充與密集站點整併，整合設備、光纖及電力介面。</span>
+              <span class="solution-action">查看方案詳情 →</span>
             </div>
-            <b>↗</b>
+            <b aria-hidden="true">↗</b>
           </a>
         </div>
 
-        <!-- 服務規格與常見問題 (WEB-007 FAQ 模組) -->
-        <div class="service-faq-block reveal">
-          <div class="faq-heading">
-            <p class="eyebrow light">FREQUENTLY ASKED QUESTIONS</p>
-            <h3>工程服務常見問題 (FAQ)</h3>
-            <p>彙整客戶與合作夥伴在會勘、工期與施工規格上的常見疑問：</p>
-          </div>
-          <div class="faq-grid">
-            <div class="faq-card">
-              <b>Q1：一般基地台或室內涵蓋工程的會勘至施工流程需多久？</b>
-              <p>通常於收到需求後 1–2 個工作天內安排現場會勘，會勘後 3 個工作天內出具勘查報告與工安計畫。實際工期依場域結構與斷電施工窗口而定。</p>
-            </div>
-            <div class="faq-card">
-              <b>Q2：高祥是否具備多品牌設備的整合施工能力？</b>
-              <p>是的，高祥團隊具備 Ericsson、Nokia、OneWeb 等國際主流設備之安裝與測試經驗，並嚴格遵循各大電信營運商之施工技術規範。</p>
-            </div>
-            <div class="faq-card">
-              <b>Q3：偏遠場域或無光纖環境如何提供備援通訊方案？</b>
-              <p>我們提供 OneWeb 低軌衛星地面站終端整合，可搭配太陽能獨立供電系統，快速建立應急與關鍵備援連線。</p>
-            </div>
-            <div class="faq-card">
-              <b>Q4：專案維運服務等級 (SLA) 與緊急搶修時效？</b>
-              <p>維運窗口、服務範圍與回應時效會依場域、設備及合約另行約定；評估階段將先確認緊急聯絡與升級處理流程。</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -441,8 +388,8 @@
             <p class="eyebrow">DELIVERY PROCESS</p>
           </div>
           <div>
-            <h2>從現勘到驗收，每一步都有交付依據。</h2>
-            <p>不是只有「按圖施工」。每一階段都定義確認事項、現場紀錄與交付文件，讓業主掌握進度，也讓後續驗收有資料可追溯。</p>
+            <h2>合作五階段，<br>交付清楚可追溯。</h2>
+            <p>從確認場域條件到完成點交，五個階段讓您掌握合作進度與各階段可取得的文件。</p>
           </div>
         </div>
 
@@ -450,33 +397,39 @@
           <div class="process-step">
             <div class="step-num">01</div>
             <b>現場會勘</b>
-            <p>確認設備位置、電力容量、纜線路由、施工動線及高空作業條件，提前標示限制與風險。</p>
+            <p>確認場域條件、需求與施工限制。</p>
             <span class="step-output"><small>交付</small> 現勘照片、點位與路由紀錄</span>
           </div>
           <div class="process-step">
             <div class="step-num">02</div>
             <b>施工規劃</b>
-            <p>依場域條件確認施工圖、材料清單、人力排程、停機窗口，以及防墜、吊掛和用電措施。</p>
+            <p>對齊圖面、工期、施工窗口與安全措施。</p>
             <span class="step-output"><small>交付</small> 施工圖、排程與工安文件</span>
           </div>
           <div class="process-step">
             <div class="step-num">03</div>
             <b>現場施工</b>
-            <p>依核定圖面進行設備固定、纜線配置、防水、接地與標示；每日記錄人員、工項和異常事項。</p>
+            <p>依核定計畫執行，記錄現場進度與異常。</p>
             <span class="step-output"><small>交付</small> 施工日誌與前中後照片</span>
           </div>
           <div class="process-step">
             <div class="step-num">04</div>
             <b>測試與調校</b>
-            <p>依專案規範執行射頻、光纖或網路測試；針對異常數值複測、修正並保留原始結果。</p>
+            <p>依專案規範量測，修正異常並複測。</p>
             <span class="step-output"><small>交付</small> 儀器讀值與測試報告</span>
           </div>
           <div class="process-step">
             <div class="step-num">05</div>
             <b>竣工與驗收</b>
-            <p>彙整自主檢查、缺失改善、竣工照片及量測資料，依業主程序完成點交與後續維護銜接。</p>
+            <p>彙整成果與改善紀錄，完成點交。</p>
             <span class="step-output"><small>交付</small> 竣工文件與驗收紀錄</span>
           </div>
+        </div>
+
+        <div class="process-questions reveal">
+          <h3>開始合作前，您可能想了解</h3>
+          <details><summary>會勘與施工需要多久？</summary><p>請先提供場域位置、工程需求與預計時程。會勘安排及施工工期依場地條件、設備需求與可用施工窗口確認，由專案窗口與您協調。</p></details>
+          <details><summary>完工後的維運與緊急支援如何安排？</summary><p>維運範圍、聯絡窗口與回應時效依設備、場域及合約另行約定，於評估階段確認緊急聯絡與升級處理方式。</p></details>
         </div>
       </div>
     </section>

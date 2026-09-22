@@ -2829,3 +2829,42 @@ img {
 
 /* 獨立服務與法務內容頁 */
 .detail-header{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px max(24px,calc((100% - 1180px)/2));background:var(--navy);color:#fff}.detail-header>a:last-child{font-size:14px;font-weight:700;color:var(--cyan)}.detail-header .brand img{height:42px}.detail-main,.legal-main{width:min(960px,calc(100% - 40px));margin:auto;padding:100px 0}.detail-hero{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;margin-bottom:88px}.detail-hero h1,.legal-main h1{margin:0 0 24px;font-size:clamp(42px,7vw,76px);line-height:1.12;letter-spacing:-.045em}.detail-hero>img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}.detail-lead{font-size:19px;color:var(--muted)}.detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:40px 0 80px}.detail-panel{padding:28px;background:var(--paper);border-top:4px solid var(--blue)}.detail-panel h2{font-size:20px;margin:0 0 12px}.detail-panel ul{margin:0;padding-left:20px}.detail-panel li+li{margin-top:8px}.detail-process{margin:70px 0}.detail-process ol{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:0;list-style:none;counter-reset:step}.detail-process li{counter-increment:step;padding:24px 18px;border:1px solid var(--line)}.detail-process li:before{content:"0" counter(step);display:block;margin-bottom:12px;color:var(--blue);font:800 12px Manrope,sans-serif}.detail-cta{padding:42px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:30px}.detail-cta h2{margin:0 0 8px}.detail-cta p{margin:0;color:#b9c7d0}.detail-footer{padding:28px;text-align:center;background:var(--navy-dark);color:#aab7c0;font-size:12px}.legal-page{background:var(--paper)}.legal-main{max-width:820px;background:#fff;padding-inline:clamp(24px,6vw,72px)}.legal-updated{padding:15px 18px;background:#fff7df;border-left:4px solid #e5a900}.legal-main section{padding:28px 0;border-top:1px solid var(--line)}.legal-main h2{font-size:21px}.legal-main a{color:var(--blue);text-decoration:underline}.legal-main p{color:#465b69}.service-back{display:inline-block;margin-bottom:24px;color:var(--blue);font-weight:700}@media(max-width:760px){.detail-header{align-items:flex-start}.detail-header .brand span{display:none}.detail-main,.legal-main{padding-top:64px}.detail-hero{grid-template-columns:1fr;gap:30px;margin-bottom:60px}.detail-grid,.detail-process ol{grid-template-columns:1fr}.detail-cta{align-items:flex-start;flex-direction:column;padding:30px}.detail-cta .button{width:100%}}
+
+
+/* 2026-09: clear section roles and service exploration */
+#solutions .solution-grid { margin-bottom: 0; }
+#solutions .solution-card { height: auto; min-height: 360px; gap: 56px; }
+#solutions .card-copy { padding-right: 22px; }
+#solutions .card-copy .solution-action { margin-top: 22px; color: #fff; font-weight: 700; font-size: 14px; }
+#solutions .solution-card:focus-visible::after { opacity: 1; }
+.case-service-link { display: block; width: fit-content; margin-top: 22px; color: var(--blue); font-weight: 700; font-size: 14px; }
+.case-service-link:hover, .service-inline-link:hover { text-decoration: underline; text-underline-offset: 5px; }
+#projects .case-card { scroll-margin-top: 110px; }
+#process .process-step { min-height: 240px; }
+.process-questions { max-width: 860px; margin: 48px auto 0; }
+.process-questions h3 { font-size: 22px; }
+.process-questions details, .service-questions details { border-bottom: 1px solid var(--line); }
+.process-questions summary, .service-questions summary { padding: 20px 4px; cursor: pointer; font-weight: 700; }
+.process-questions details p, .service-questions details p { margin: 0; padding: 0 4px 22px; color: var(--muted); line-height: 1.85; }
+.service-detail-page .detail-grid { margin-bottom: 56px; }
+.service-preparation { padding: 32px; background: var(--paper); border-left: 4px solid var(--blue); }
+.service-preparation h2, .service-technical h2, .service-related h2, .service-questions h2 { font-size: clamp(24px, 3vw, 32px); line-height: 1.45; margin: 0 0 20px; }
+.service-preparation p:last-child { margin-bottom: 0; color: var(--muted); line-height: 1.85; }
+.service-technical, .service-related, .service-questions { margin: 72px 0; }
+.service-check { display: flex; align-items: flex-start; gap: 24px; padding: 26px 0; border-top: 1px solid var(--line); }
+.service-check > span { font: 800 22px/1.6 Manrope,sans-serif; color: var(--blue); }
+.service-check h3 { margin: 0 0 8px; font-size: 20px; }
+.service-check p { margin: 0; color: var(--muted); line-height: 1.85; }
+.service-inline-link { display: inline-block; padding: 12px 0; color: var(--blue); font-weight: 700; }
+.service-related { display: grid; grid-template-columns: 1fr 1.1fr; gap: 32px; align-items: center; background: var(--paper); padding: 28px; }
+.service-related img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 4px; }
+.service-related p:not(.eyebrow) { color: var(--muted); }
+.service-detail-page a:focus-visible, .service-detail-page summary:focus-visible, .process-questions summary:focus-visible, .case-service-link:focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; }
+@media (max-width: 760px) {
+  #solutions .solution-card { min-height: 330px; padding: 26px; }
+  #solutions .solution-card h3 { font-size: 25px; }
+  .service-related { grid-template-columns: 1fr; padding: 22px; }
+  .service-preparation { padding: 24px; }
+  .service-check { gap: 16px; }
+  .service-technical, .service-related, .service-questions { margin: 52px 0; }
+}
