@@ -35,4 +35,4 @@ git clone --branch backup/before-content-refresh-20260922 "D:\gemini開發專案
 - QA 截圖與結果存放於專案外備份資料夾的 qa-20260922 子目錄。
 
 ## 發布狀態
-此次為本地更新，尚未推送 GitHub 或部署正式站。
+此次更新已推送至 GitHub (commit: c9c9a62)。尚未進行正式部署。
