@@ -84,3 +84,11 @@ python3 -m http.server 3000
 6. 至 Resend Emails 確認郵件狀態為 `delivered`。
 
 金鑰或環境變數變更後必須重新部署，新的設定才會套用至 Production。
+
+## 首頁視覺與互動
+
+- `fusion.css`、`color-bridges.css`、`typography-scale.css` 與 `hero-original.css`：首頁的章節配色、銜接、字級與主視覺。
+- `company-motion.js`、`fusion-sections.js`：主視覺與章節捲動效果；系統設定「減少動態」時降低動畫。
+- `partner-motion.css`、`partner-motion.js`：設備品牌實務經驗的互動展示。
+- `icons-sprite.svg`、`site-icon-map.css`、`site-icon-map.js`：40 款工程圖示與首頁區塊配置。`icon-motion.html` 為完整圖示索引。
+- `build-icon-sprite.py`：圖示來源變更後，可重新產生 `icons-sprite.svg`。

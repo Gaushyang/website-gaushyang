@@ -1,0 +1,21 @@
+/* Keep the company's existing hero composition and motion unchanged in the concept preview. */
+.signal-home .signal-hero{min-height:max(720px,100svh);height:auto;padding:138px 0 105px;background:#031734}
+.signal-home .signal-hero::before{display:none}
+.signal-home .signal-atmosphere{z-index:-1;opacity:1;filter:none;animation:signal-breathe 15s ease-in-out infinite alternate!important}
+.signal-home .signal-field{display:block}
+.signal-home .hero-shimmer{opacity:1;background:linear-gradient(90deg,#01112d52,transparent 75%)}
+.signal-home .hero-layout{position:relative;z-index:1;display:block;width:calc(100% - 80px);margin:0 auto;will-change:transform,opacity}
+.signal-home .hero-content{text-align:center;max-width:none;animation:none!important}
+.signal-home .hero .eyebrow{margin:0 0 22px;color:#d4eaff;font:11px/1.5 Manrope,sans-serif;letter-spacing:.16em}
+.signal-home .hero h1{display:flex;justify-content:center;white-space:nowrap;gap:.04em;font-size:clamp(55px,7.35vw,126px);line-height:1.38;letter-spacing:-.065em;font-weight:500;margin:0;padding:10px 0;text-shadow:none}
+.signal-home .hero h1 em{display:inline-flex;color:#fff}
+.signal-home .hero-lead{max-width:600px;margin:40px auto 22px;font-size:16px;color:#f8fcff;text-shadow:0 2px 12px #001a3b}
+.signal-home .hero-actions{justify-content:center;flex-direction:row;gap:10px}
+.signal-home .hero-actions .button{min-height:50px;padding:14px 24px;font-size:13px}
+.signal-home .hero-actions .button-white{color:#10151d;background:#fff;border-color:#fff}
+.signal-home .hero-actions .signal-secondary{background:#091627;border-color:#9fb9d9;color:#fff}
+.signal-home .hero-coordinate{display:none}
+.signal-home .hero-bottom{z-index:2;left:48px;right:48px;bottom:25px;color:#e1f1ff;background:#051b36c2;gap:15px;align-items:center;border-top:1px solid #a3c6f044;padding:14px 18px}
+@media(max-width:900px){.signal-home .hero h1{flex-direction:column;align-items:center;font-size:clamp(60px,11vw,94px);line-height:1.28}.signal-home .hero-lead{margin-top:28px}.signal-home .hero-layout{width:calc(100% - 50px)}.signal-home .hero-bottom>span{display:none}.signal-home .hero-bottom{justify-content:space-between}}
+@media(max-width:640px){.signal-home .signal-hero{min-height:max(660px,100svh);padding:128px 0 118px;align-items:center}.signal-home .hero-layout{width:calc(100% - 32px);margin:auto}.signal-home .hero h1{font-size:clamp(45px,12vw,70px);line-height:1.28;white-space:nowrap}.signal-home .hero .eyebrow{font-size:9px;letter-spacing:.1em}.signal-home .hero-lead{font-size:13px;margin:25px auto 20px}.signal-home .hero-actions{gap:8px}.signal-home .hero-actions .button{font-size:11px;padding:12px 13px;min-height:47px}.signal-home .hero-bottom{left:20px;right:20px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.signal-home .signal-atmosphere{animation:none!important;transform:none!important}}

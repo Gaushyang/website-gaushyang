@@ -1,0 +1,41 @@
+/* Live effects layered on the existing Gaushyang hero image. */
+.signal-home .signal-hero {height:auto; min-height:max(720px,100svh); padding:138px 0 105px;}
+.signal-home .signal-atmosphere {animation:none; transform:scale(1.045); transform-origin:center;}
+.signal-home .motion-paused .signal-atmosphere {animation-play-state:paused;}
+.signal-home .signal-field {position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.signal-home .hero-shimmer {position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#01112d52,transparent 75%);z-index:0;}
+.signal-home .hero-layout {position:relative;z-index:1;display:block;width:calc(100% - 80px);margin:0 auto;will-change:transform,opacity;}
+.signal-home .hero-content {text-align:center;max-width:none;animation:none;}
+.signal-home .hero .eyebrow {margin:0 0 22px;color:#d4eaff;}
+.signal-home .hero h1 {display:flex;justify-content:center;white-space:nowrap;gap:.04em;font-size:clamp(55px,7.35vw,126px);line-height:1.38;letter-spacing:-.065em;font-weight:500;margin:0;padding:10px 0;}
+.signal-home .hero h1 em {font-style:normal;}
+.signal-home .focus-line {display:inline-flex;white-space:nowrap;}
+.signal-home .focus-letter {display:inline-block;color:#fff;will-change:filter,opacity;text-shadow:0 0 18px #d1edff36;}
+.signal-home .hero-lead {max-width:600px;margin:40px auto 22px;font-size:16px;color:#f8fcff;text-shadow:0 2px 12px #001a3b;}
+.signal-home .hero-actions {justify-content:center;flex-direction:row;gap:10px;}
+.signal-home .hero-coordinate {display:none;}
+.signal-home .hero-bottom {z-index:2;color:#e1f1ff;background:#051b36c2;gap:15px;align-items:center;}
+.signal-home .signal-proof {position:relative;z-index:1;overflow:hidden;}
+.signal-home .signal-proof::before {content:"";position:absolute;inset:0 auto auto 0;width:100%;height:2px;background:linear-gradient(90deg,transparent,#96d8ff,transparent);transform:scaleX(0);transform-origin:left;box-shadow:0 0 25px #8ecfff;}
+.signal-home .signal-proof.is-visible::before {transform:scaleX(1);transition:transform 1.25s ease;}
+.signal-home .company-landscape {overflow:hidden;}
+.signal-home .company-landscape img {transform:scale(1.07);transition:transform 1.2s cubic-bezier(.2,.7,.2,1);}
+.signal-home .company-landscape.is-visible img {transform:scale(1);}
+.signal-home #process .process-steps {position:relative;}
+.signal-home #process .process-steps::before {content:"";position:absolute;top:-2px;left:0;right:0;height:2px;background:#8cc7ff;transform:scaleX(0);transform-origin:left;box-shadow:0 0 14px #8cc7ff;}
+.signal-home #process .process-steps.is-visible::before {transform:scaleX(1);transition:transform 1.5s ease;}
+.signal-home .timeline article {position:relative;}
+@media(prefers-reduced-motion:no-preference){
+  .signal-home.motion-enabled .motion-reveal {opacity:0;transform:translateY(36px);transition:opacity .85s ease var(--motion-delay,0ms),transform .85s cubic-bezier(.2,.7,.2,1) var(--motion-delay,0ms);}
+  .signal-home.motion-enabled .motion-reveal.is-visible {opacity:1;transform:translateY(0);}
+  .signal-home.motion-enabled .motion-reveal.company-landscape {transform:translateX(-45px);}
+  .signal-home.motion-enabled .motion-reveal.company-landscape.is-visible {transform:translateX(0);}
+  .signal-home.motion-enabled .motion-reveal.solution-card.is-visible:hover {transform:translateY(-5px);}
+  .signal-home .mega-menu:not([hidden]) {animation:signal-menu .28s ease-out both;}
+  @keyframes signal-menu {from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+  .signal-home .signal-atmosphere {animation:signal-breathe 15s ease-in-out infinite alternate;}
+  @keyframes signal-breathe {from{transform:scale(1.045) translateX(-.5%)}to{transform:scale(1.11) translateX(1%)}}
+}
+@media(max-width:900px){.signal-home .hero h1{flex-direction:column;align-items:center;font-size:clamp(60px,11vw,94px);line-height:1.28}.signal-home .hero-lead{margin-top:28px}.signal-home .hero-layout{width:calc(100% - 50px)}.signal-home .hero-bottom>span{display:none}.signal-home .hero-bottom{justify-content:space-between}.signal-home #process .process-steps::before{display:none}}
+@media(max-width:640px){.signal-home .signal-hero{min-height:max(660px,100svh);padding:128px 0 118px;align-items:center}.signal-home .hero-layout{width:calc(100% - 32px);margin:auto}.signal-home .hero h1{font-size:clamp(45px,12vw,70px)}.signal-home .hero .eyebrow{font-size:9px}.signal-home .hero-lead{font-size:13px;margin:25px auto 20px}.signal-home .hero-actions{gap:8px}.signal-home .hero-actions .button{font-size:11px;padding:12px 13px;min-height:47px}.signal-home .hero-bottom{left:20px;right:20px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.signal-home .signal-atmosphere,.signal-home .hero-layout,.signal-home .motion-reveal,.signal-home .company-landscape img {animation:none!important;transform:none!important;opacity:1!important;transition:none!important}.signal-home .focus-letter{filter:none!important;opacity:1!important}}

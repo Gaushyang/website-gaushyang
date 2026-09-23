@@ -1,0 +1,15 @@
+.signal-home .color-bridge {
+  height: clamp(64px, 8vw, 116px);
+  width: 100%;
+  pointer-events: none;
+}
+.signal-home .bridge-hero-proof { background: linear-gradient(180deg, #63a5e2, #dcecff); }
+.signal-home .bridge-proof-company { background: linear-gradient(180deg, #dcecff, #eef4fb); }
+.signal-home .bridge-company-solutions { background: linear-gradient(180deg, #eef4fb 0%, #a4b9d3 34%, #354f73 70%, #05080e 100%); }
+.signal-home .bridge-solutions-process { background: linear-gradient(180deg, #05080e 0%, #385579 45%, #eef4fb 100%); }
+.signal-home .bridge-process-strength { background: linear-gradient(180deg, #eef4fb 0%, #829cba 44%, #06162b 100%); }
+.signal-home .bridge-strength-careers { background: linear-gradient(180deg, #06162b 0%, #536f96 48%, #e7f0fb 100%); }
+.signal-home .bridge-careers-about { background: linear-gradient(180deg, #e7f0fb 0%, #839ab9 42%, #05080e 100%); }
+.signal-home .bridge-about-contact { background: linear-gradient(180deg, #05080e 0%, #081329 58%, #101e39 100%); }
+.signal-home .bridge-contact-footer { background: linear-gradient(180deg, #2b79c7, #0b2342 54%, #05080e); }
+@media (max-width: 640px) { .signal-home .color-bridge { height: 58px; } }

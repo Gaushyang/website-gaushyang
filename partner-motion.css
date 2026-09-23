@@ -1,0 +1,36 @@
+/* A one-time signal sweep and selectable readout for verified engineering experience. */
+.signal-home #strength .partner-section{margin-top:84px;scroll-margin-top:115px}
+.signal-home #strength .partner-intro{max-width:900px;margin-bottom:30px}
+.signal-home #strength .partner-intro b{display:block;color:#f4f9ff;font-size:clamp(25px,2.9vw,40px);font-weight:500;letter-spacing:-.035em;margin-bottom:13px}
+.signal-home #strength .partner-intro p{color:#adc3d8;font-size:13px;line-height:1.85}
+.signal-home #strength .partner-stage{position:relative;overflow:hidden;padding:25px 27px 0;border:1px solid #74adce66;background:radial-gradient(ellipse 55% 90% at var(--partner-glow-x,10%) 110%,#1267b650,transparent 70%),linear-gradient(125deg,#0d2035,#071622 65%);transition:background .35s,border-color .3s}
+.signal-home #strength .partner-stage::before{content:"";position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,transparent,#92dfff 30%,#e5f7ff 50%,#2a9afa 70%,transparent);box-shadow:0 0 22px #4ab5ff;transform:scaleX(0);transform-origin:left;transition:transform 1.05s cubic-bezier(.2,.7,.2,1)}
+.signal-home #strength .partner-section.partner-visible .partner-stage::before{transform:scaleX(1)}
+.signal-home #strength .partner-stage-head{display:flex;justify-content:space-between;align-items:center;gap:20px;color:#b7d4e8;font:700 10px/1.4 Manrope,sans-serif;letter-spacing:.18em;margin-bottom:22px}
+.signal-home #strength .partner-stage-head span:last-child{color:#8ebcde}
+.signal-home #strength .partner-strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;padding:0 0 22px;border:0;border-radius:0;background:none}
+.signal-home #strength .partner-card{position:relative;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;min-width:0;min-height:146px;padding:16px 15px 13px;border:1px solid #9bc6e348;background:#061727b3;color:#e8f5ff;text-align:left;opacity:0;transform:translateY(23px);transition:opacity .42s ease,transform .42s cubic-bezier(.2,.7,.2,1),background .28s,border-color .28s,box-shadow .28s;transition-delay:calc(var(--partner-order)*65ms)}
+.signal-home #strength .partner-section.partner-visible .partner-card{opacity:1;transform:none}
+.signal-home #strength .partner-card:hover,.signal-home #strength .partner-card:focus-visible,.signal-home #strength .partner-card.is-selected{border-color:#b4dfff;background:#143a5d;box-shadow:inset 0 0 35px #318bcb28,0 12px 30px #0003}
+.signal-home #strength .partner-card:focus-visible{outline:2px solid #b4dfff;outline-offset:3px}
+.signal-home #strength .partner-card.is-selected::before{content:"";position:absolute;inset:-1px auto auto -1px;width:45%;height:2px;background:#bceaff;box-shadow:0 0 16px #83cfff}
+.signal-home #strength .partner-card .partner-logo{width:100%;height:70px;display:flex;align-items:center;justify-content:center;overflow:visible;padding:8px;background:#e8f3ff10;transition:background .28s}
+.signal-home #strength .partner-card:hover .partner-logo,.signal-home #strength .partner-card:focus-visible .partner-logo,.signal-home #strength .partner-card.is-selected .partner-logo{background:#e8f3ff}
+.signal-home #strength .partner-card .partner-logo img{display:block;max-width:100%;max-height:63px;height:auto;object-fit:contain;opacity:.88;filter:grayscale(1) brightness(4);transform:scale(.95);transition:filter .28s,opacity .28s,transform .28s}
+.signal-home #strength .partner-card:hover .partner-logo img,.signal-home #strength .partner-card:focus-visible .partner-logo img,.signal-home #strength .partner-card.is-selected .partner-logo img{opacity:1;filter:none;transform:scale(1)}
+.signal-home #strength .partner-card .partner-logo-chunghwa img{width:min(116px,100%)}
+.signal-home #strength .partner-card .partner-logo-fet img{width:min(112px,100%)}
+.signal-home #strength .partner-card .partner-logo-ericsson img{width:min(52px,100%)}
+.signal-home #strength .partner-card .partner-logo-nokia img{width:min(116px,100%)}
+.signal-home #strength .partner-card .partner-logo-oneweb img{width:min(118px,100%)}
+.signal-home #strength .partner-name{font:600 12px/1.3 'Noto Sans TC',sans-serif;letter-spacing:.02em}
+.signal-home #strength .partner-index{position:absolute;right:14px;bottom:13px;color:#9ab9d2;font:700 10px/1 Manrope,sans-serif}
+.signal-home #strength .partner-readout{display:grid;grid-template-columns:90px 1fr auto;align-items:center;gap:20px;min-height:71px;border-top:1px solid #99c5e055;color:#d9eeff}
+.signal-home #strength .partner-readout-count{font:700 11px/1 Manrope,sans-serif;letter-spacing:.12em;color:#8ed8ff}
+.signal-home #strength .partner-readout strong{font-size:15px;font-weight:500;letter-spacing:.02em}
+.signal-home #strength .partner-readout-note{font-size:11px;color:#9bb5c9}
+.signal-home #strength .partner-readout.is-changing strong{animation:partner-copy .28s ease both}
+@keyframes partner-copy{from{opacity:.35;transform:translateY(7px)}to{opacity:1;transform:none}}
+@media(max-width:900px){.signal-home #strength .partner-strip{grid-template-columns:repeat(3,minmax(0,1fr))}.signal-home #strength .partner-readout{grid-template-columns:80px 1fr}.signal-home #strength .partner-readout-note{display:none}}
+@media(max-width:640px){.signal-home #strength .partner-section{margin-top:62px}.signal-home #strength .partner-stage{padding:20px 18px 0}.signal-home #strength .partner-stage-head{font-size:9px}.signal-home #strength .partner-strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(155px,57vw);grid-template-columns:none;gap:9px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;padding:0 0 19px;scrollbar-width:none}.signal-home #strength .partner-strip::-webkit-scrollbar{display:none}.signal-home #strength .partner-card{scroll-snap-align:start;min-height:137px}.signal-home #strength .partner-readout{grid-template-columns:62px 1fr;gap:10px;min-height:72px}.signal-home #strength .partner-readout strong{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.signal-home #strength .partner-card{opacity:1;transform:none;transition:none}.signal-home #strength .partner-stage::before{transform:scaleX(1);transition:none}.signal-home #strength .partner-readout.is-changing strong{animation:none}}

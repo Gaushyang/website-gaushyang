@@ -29,6 +29,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="enterprise.css?v=20260922-solutions-merged">
   <link rel="stylesheet" href="signal.css?v=20260922">
+  <link rel="stylesheet" href="fusion.css?v=2">
+  <link rel="stylesheet" href="company-motion.css?v=20260923">
+  <link rel="stylesheet" href="hero-original.css?v=1">
+  <link rel="stylesheet" href="partner-motion.css?v=1">
+  <link rel="stylesheet" href="typography-scale.css?v=1">
+  <link rel="stylesheet" href="color-bridges.css?v=1">
+  <link rel="stylesheet" href="site-icon-map.css?v=1">
+  <script src="company-motion.js?v=20260923-2" defer></script>
+  <script src="fusion-sections.js?v=2" defer></script>
+  <script src="partner-motion.js?v=1" defer></script>
+  <script src="site-icon-map.js?v=1" defer></script>
   <script src="signal.js?v=20260922" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>
 
@@ -99,6 +110,8 @@
     <!-- 【第 1 順位】首頁定位、主次 CTA、實績數據與定義 (WEB-006, WEB-010, WEB-011) -->
     <section class="hero signal-hero" aria-labelledby="hero-title">
       <div class="signal-atmosphere" aria-hidden="true"></div>
+      <canvas class="signal-field" aria-hidden="true"></canvas>
+      <div class="hero-shimmer" aria-hidden="true"></div>
       <div class="container hero-layout">
         <div class="hero-content">
           <p class="eyebrow light">GAUSHYANG TELECOM / SINCE 1987</p>
@@ -113,6 +126,7 @@
       <div class="hero-coordinate" aria-hidden="true"><span>GROUND TO SPACE</span><span>↙</span></div>
       <div class="hero-bottom"><span>通訊基礎建設，從現場走向未來。</span><a href="#company">向下探索 ↓</a></div>
     </section>
+    <div class="color-bridge bridge-hero-proof" aria-hidden="true"></div>
     <section class="signal-proof" aria-label="工程經驗與服務範圍">
       <div class="hero-facts" aria-label="公司重點實績數據">
         <div class="fact-item">
@@ -133,6 +147,7 @@
       </div>
     </section>
 
+    <div class="color-bridge bridge-proof-company" aria-hidden="true"></div>
     <section id="company" class="intro section">
       <div class="container intro-grid reveal">
         <figure class="company-landscape"><img src="images/hero/cape-of-good-hope.webp" alt="海岸風力發電與通訊工程服務環境" loading="lazy" width="1200" height="800"><figcaption>立足台灣，連結每一個需要的地方。</figcaption></figure>
@@ -162,6 +177,7 @@
     </section>
 
     <!-- 通訊方案與應用情境：以五個服務卡片為統一入口 -->
+    <div class="color-bridge bridge-company-solutions" aria-hidden="true"></div>
     <section id="solutions" class="solutions section section-dark">
       <div class="container">
         <span id="projects" class="legacy-section-anchor" aria-hidden="true"></span>
@@ -252,6 +268,7 @@
     </section>
 
     <!-- 【第 5 順位】工程五階段流程與品質管理 (WEB-007 Process & Quality) -->
+    <div class="color-bridge bridge-solutions-process" aria-hidden="true"></div>
     <section id="process" class="process-section section">
       <div class="container">
         <div class="section-heading reveal">
@@ -306,6 +323,7 @@
     </section>
 
     <!-- 【第 6 順位】工安體系、資質證照與設備實務經驗 (WEB-003, WEB-005 Strength) -->
+    <div class="color-bridge bridge-process-strength" aria-hidden="true"></div>
     <section id="strength" class="strength section section-light">
       <div class="container">
         <div class="section-heading reveal">
@@ -464,24 +482,28 @@
         </div>
 
         <!-- 設備與系統工程經驗 (WEB-005 精準界定關係) -->
-        <div class="partner-section reveal">
+        <div id="partner-experience" class="partner-section reveal">
           <div class="partner-intro">
             <b>電信系統與多品牌設備工程實務經驗</b>
             <p>高祥團隊深耕業界近四十年，具備各大電信營運商嚴格規範之施工能力，並累積豐富國際主流設備品牌之安裝、測試與系統整合實務經驗。（註：商標圖示代表團隊具備該品牌設備之實務建置經驗，非代理或經銷關係）</p>
           </div>
-          <div class="partner-strip">
-            <span>EXPERIENCED SYSTEMS</span>
-            <span class="partner-logo partner-logo-chunghwa"><img src="icon/Chunghwa_Telecom.svg.png" alt="中華電信工程規範經驗"></span>
-            <span class="partner-logo partner-logo-fet"><img src="icon/FET.png" alt="遠傳電信工程規範經驗"></span>
-            <span class="partner-logo partner-logo-ericsson"><img src="icon/ericsson.png" alt="Ericsson 設備建置經驗"></span>
-            <span class="partner-logo partner-logo-nokia"><img src="icon/nokia-normalized.png" alt="Nokia 設備建置經驗"></span>
-            <span class="partner-logo partner-logo-oneweb"><img src="icon/oneWeb.png" alt="OneWeb 衛星設備建置經驗"></span>
+          <div class="partner-stage" aria-label="電信系統與設備實務項目">
+            <div class="partner-stage-head"><span>EXPERIENCED SYSTEMS</span><span>SELECT TO EXPLORE <span aria-hidden="true">↘</span></span></div>
+            <div class="partner-strip" role="group" aria-label="選擇實務經驗項目">
+              <button class="partner-card is-selected" type="button" aria-pressed="true" data-label="中華電信工程規範經驗" style="--partner-order:0"><span class="partner-logo partner-logo-chunghwa"><img src="icon/Chunghwa_Telecom.svg.png" alt=""></span><span class="partner-name">中華電信</span><span class="partner-index">01</span></button>
+              <button class="partner-card" type="button" aria-pressed="false" data-label="遠傳電信工程規範經驗" style="--partner-order:1"><span class="partner-logo partner-logo-fet"><img src="icon/FET.png" alt=""></span><span class="partner-name">遠傳電信</span><span class="partner-index">02</span></button>
+              <button class="partner-card" type="button" aria-pressed="false" data-label="Ericsson 設備建置經驗" style="--partner-order:2"><span class="partner-logo partner-logo-ericsson"><img src="icon/ericsson.png" alt=""></span><span class="partner-name">Ericsson</span><span class="partner-index">03</span></button>
+              <button class="partner-card" type="button" aria-pressed="false" data-label="Nokia 設備建置經驗" style="--partner-order:3"><span class="partner-logo partner-logo-nokia"><img src="icon/nokia-normalized.png" alt=""></span><span class="partner-name">Nokia</span><span class="partner-index">04</span></button>
+              <button class="partner-card" type="button" aria-pressed="false" data-label="OneWeb 衛星設備建置經驗" style="--partner-order:4"><span class="partner-logo partner-logo-oneweb"><img src="icon/oneWeb.png" alt=""></span><span class="partner-name">OneWeb</span><span class="partner-index">05</span></button>
+            </div>
+            <div class="partner-readout" aria-live="polite"><span class="partner-readout-count">01 / 05</span><strong>中華電信工程規範經驗</strong><span class="partner-readout-note">工程規範與設備實務經驗</span></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- 【第 7 順位 A】人才招募與職涯培育專區 (WEB-012 Careers Section) -->
+    <div class="color-bridge bridge-strength-careers" aria-hidden="true"></div>
     <section id="careers" class="careers-section section">
       <div class="container">
         <div class="section-heading reveal">
@@ -526,6 +548,7 @@
     </section>
 
     <!-- 【第 7 順位 B】發展沿革與永續 ESG (WEB-003, Sustainability) -->
+    <div class="color-bridge bridge-careers-about" aria-hidden="true"></div>
     <section id="about" class="about-section section section-dark">
       <div class="container">
         <!-- 發展沿革 -->
@@ -602,6 +625,7 @@
     </section>
 
     <!-- 【第 8 順位】會勘預約、聯絡需求與全域表單 (WEB-004, WEB-006 Contact) -->
+    <div class="color-bridge bridge-about-contact" aria-hidden="true"></div>
     <section id="contact" class="contact section">
 
       <div class="contact-wave-overlay" aria-hidden="true"></div>
@@ -754,6 +778,7 @@
   </dialog>
 
   <!-- 頁尾法定資訊與導覽 (WEB-003 Footer) -->
+  <div class="color-bridge bridge-contact-footer" aria-hidden="true"></div>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
@@ -761,7 +786,6 @@
           <img src="images/gaushyang-logo.jpg" alt="高祥電信">
           <span><b>高祥電信股份有限公司</b><small>GAUSHYANG TELECOM CO., LTD.</small></span>
         </a>
-        <p>深耕台灣通訊工程逾 38 年，以專業技術與嚴格工安，連結每一個重要時刻。</p>
         <div class="legal-badge-row">
           <span class="company-registration-number">統一編號：22263744</span>
         </div>

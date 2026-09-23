@@ -1,0 +1,29 @@
+.signal-home .site-icon-mark{display:inline-flex;flex:none;width:38px;height:38px;align-items:center;justify-content:center;color:#247bd0}
+.signal-home .site-icon-mark svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .35s ease,color .35s ease}
+.signal-home .site-icon-mark svg :is(path,circle,rect,line,polyline,polygon){stroke-dasharray:var(--line-length,none);stroke-dashoffset:var(--line-length,0)}
+.signal-home .site-icon-mark.icon-seen svg :is(path,circle,rect,line,polyline,polygon){animation:site-icon-draw .7s cubic-bezier(.17,.8,.2,1) forwards;animation-delay:var(--line-delay,0ms)}
+@keyframes site-icon-draw{to{stroke-dashoffset:0}}
+.signal-home :is(.highlight-item,.process-step,.capability,.career-pillar,.timeline article):hover .site-icon-mark svg,.signal-home .solution-card:hover .site-icon-mark svg{transform:translateY(-3px) scale(1.06)}
+.signal-home .intro-highlights .highlight-item{position:relative;padding-left:52px}
+.signal-home .intro-highlights .site-icon-mark{position:absolute;left:0;top:12px;width:32px;height:32px}
+.signal-home .solution-card .site-icon-mark{position:absolute;right:25px;top:22px;width:42px;height:42px;color:#eef8ff;z-index:2;filter:drop-shadow(0 2px 8px #00182e)}
+.signal-home #process .process-step .site-icon-mark{width:37px;height:37px;margin:10px 0 18px}
+.signal-home #strength .capability .site-icon-mark{width:36px;height:36px;margin:0 14px 0 0;color:#83c8ff}
+.signal-home #strength .capability h3{display:flex;align-items:center}
+.signal-home #careers .career-pillar h3{display:flex;align-items:center;gap:12px}
+.signal-home #careers .career-pillar .site-icon-mark{width:33px;height:33px}
+.signal-home #about .timeline article h3{display:flex;align-items:center;gap:12px}
+.signal-home #about .timeline article .site-icon-mark{width:36px;height:36px;color:#8ecaff}
+.signal-home #sustainability .sustainability-tags li{display:inline-flex;align-items:center;gap:7px}
+.signal-home #sustainability .sustainability-tags .site-icon-mark{width:23px;height:23px;color:#82c8ff}
+.signal-home #contact .contact-actions .button{display:inline-flex;align-items:center;gap:8px}
+.signal-home #contact .contact-actions .site-icon-mark{width:22px;height:22px;color:inherit}
+.signal-home .site-icon-ribbon{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:22px 0;margin:16px 0 34px;border-top:1px solid currentColor;border-bottom:1px solid currentColor;border-color:#6f9db144}
+.signal-home .site-icon-ribbon-title{font:600 10px/1.4 Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;min-width:105px;color:inherit;opacity:.68}
+.signal-home .site-icon-chip{display:inline-flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid #7aa6c365;color:inherit;font-size:12px;line-height:1.3;white-space:nowrap;background:#5089b013}
+.signal-home .site-icon-chip .site-icon-mark{width:23px;height:23px;color:#58abed}
+.signal-home #company .site-icon-ribbon{margin-top:16px}
+.signal-home #solutions .site-icon-ribbon,.signal-home #strength .site-icon-ribbon{color:#d9edff}
+.signal-home #process .site-icon-ribbon,.signal-home #company .site-icon-ribbon{color:#20425d}
+@media(max-width:640px){.signal-home .solution-card .site-icon-mark{width:36px;height:36px;right:20px;top:20px}.signal-home .site-icon-ribbon-title{width:100%}.signal-home .site-icon-chip{font-size:11px}.signal-home #strength .capability .site-icon-mark{width:30px;height:30px;margin-right:10px}}
+@media(prefers-reduced-motion:reduce){.signal-home .site-icon-mark svg{transition:none}.signal-home .site-icon-mark svg :is(path,circle,rect,line,polyline,polygon){stroke-dashoffset:0!important;animation:none!important}}
