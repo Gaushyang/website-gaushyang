@@ -34,3 +34,19 @@
 @media(max-width:900px){.signal-home #strength .partner-strip{grid-template-columns:repeat(3,minmax(0,1fr))}.signal-home #strength .partner-readout{grid-template-columns:80px 1fr}.signal-home #strength .partner-readout-note{display:none}}
 @media(max-width:640px){.signal-home #strength .partner-section{margin-top:62px}.signal-home #strength .partner-stage{padding:20px 18px 0}.signal-home #strength .partner-stage-head{font-size:9px}.signal-home #strength .partner-strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(155px,57vw);grid-template-columns:none;gap:9px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;padding:0 0 19px;scrollbar-width:none}.signal-home #strength .partner-strip::-webkit-scrollbar{display:none}.signal-home #strength .partner-card{scroll-snap-align:start;min-height:137px}.signal-home #strength .partner-readout{grid-template-columns:62px 1fr;gap:10px;min-height:72px}.signal-home #strength .partner-readout strong{font-size:13px}}
 @media(prefers-reduced-motion:reduce){.signal-home #strength .partner-card{opacity:1;transform:none;transition:none}.signal-home #strength .partner-stage::before{transform:scaleX(1);transition:none}.signal-home #strength .partner-readout.is-changing strong{animation:none}}
+
+/* All verified experience is visible without selecting a brand. */
+.signal-home #strength .partner-stage{padding-bottom:27px;background:linear-gradient(125deg,#102a43,#071622 70%)}
+.signal-home #strength .partner-strip{padding-bottom:0;gap:12px}
+.signal-home #strength .partner-card{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:76px auto auto 1fr;align-content:start;align-items:start;gap:0 8px;min-height:222px;padding:14px;background:#0b1e30;border-color:#9bc6e34d;box-shadow:none;cursor:default}
+.signal-home #strength .partner-card:hover{background:#0f2a43;border-color:#9bc6e380;box-shadow:none}
+.signal-home #strength .partner-card .partner-logo{grid-column:1/-1;width:100%;height:76px;padding:10px;background:#eff6fd;border-radius:7px 3px 7px 3px}
+.signal-home #strength .partner-card:hover .partner-logo{background:#eff6fd}
+.signal-home #strength .partner-card .partner-logo img,.signal-home #strength .partner-card:hover .partner-logo img{max-height:56px;opacity:1;filter:none;transform:none}
+.signal-home #strength .partner-type{grid-column:1/-1;margin-top:15px;color:#8dc8f3;font:700 10px/1.4 'Noto Sans TC',sans-serif;letter-spacing:.08em}
+.signal-home #strength .partner-name{grid-column:1/-1;margin-top:5px;color:#fff;font:700 16px/1.4 'Noto Sans TC',sans-serif}
+.signal-home #strength .partner-detail{grid-column:1/-1;margin:8px 0 0;padding-right:18px;color:#b9cede;font:400 12px/1.55 'Noto Sans TC',sans-serif}
+.signal-home #strength .partner-index{right:14px;bottom:14px}
+@media(max-width:900px){.signal-home #strength .partner-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.signal-home #strength .partner-card{min-height:207px}}
+@media(max-width:640px){.signal-home #strength .partner-stage{padding:20px 18px}.signal-home #strength .partner-stage-head{flex-wrap:wrap;gap:5px 20px}.signal-home #strength .partner-strip{display:grid;grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-columns:auto;gap:10px;overflow:visible;scroll-snap-type:none;padding:0}.signal-home #strength .partner-card{min-height:205px;scroll-snap-align:none}}
+@media(max-width:430px){.signal-home #strength .partner-strip{grid-template-columns:minmax(0,1fr)}.signal-home #strength .partner-card{min-height:190px}}
