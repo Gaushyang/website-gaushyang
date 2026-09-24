@@ -36,10 +36,13 @@
   <link rel="stylesheet" href="typography-scale.css?v=1">
   <link rel="stylesheet" href="color-bridges.css?v=1">
   <link rel="stylesheet" href="site-icon-map.css?v=1">
+  <link rel="stylesheet" href="company-carousel.css?v=10">
+  <link rel="stylesheet" href="diagonal-corners.css?v=2">
   <script src="company-motion.js?v=20260923-2" defer></script>
   <script src="fusion-sections.js?v=2" defer></script>
   <script src="partner-motion.js?v=1" defer></script>
   <script src="site-icon-map.js?v=1" defer></script>
+  <script src="company-carousel.js?v=3" defer></script>
   <script src="signal.js?v=20260922" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>
 
@@ -150,26 +153,33 @@
     <div class="color-bridge bridge-proof-company" aria-hidden="true"></div>
     <section id="company" class="intro section">
       <div class="container intro-grid reveal">
-        <figure class="company-landscape"><img src="images/hero/cape-of-good-hope.webp" alt="海岸風力發電與通訊工程服務環境" loading="lazy" width="1200" height="800"><figcaption>立足台灣，連結每一個需要的地方。</figcaption></figure>
-        <div>
-          <p class="eyebrow">WHO WE ARE</p>
-          <p class="section-index">01</p>
-        </div>
-        <div>
-          <h2>看不見的訊號，<br>看得見的工程實力。</h2>
-          <p class="large-copy">高祥電信服務台灣電信營運商與企業場域，累積跨世代通訊建設經驗，理解不同設備、場地與營運條件下的工程需求。</p>
-          <div class="intro-highlights">
-            <div class="highlight-item">
-              <b>單一合作窗口</b>
-              <p>由專案窗口協調工程需求與現場介面，讓合作溝通有明確對象。</p>
+        <div class="company-landscape company-carousel" aria-roledescription="輪播" aria-label="台灣多元場域影像輪播">
+          <div class="company-carousel-stage" aria-live="polite">
+            <div class="company-carousel-intro">
+              <div class="company-carousel-intro-label"><span>WHO WE ARE</span><span>01 / COMPANY</span></div>
+              <h2>看不見的訊號，<br>看得見的工程實力。</h2>
+              <p>高祥電信服務台灣電信營運商與企業場域，累積跨世代通訊建設經驗，理解不同設備、場地與營運條件下的工程需求。</p>
             </div>
-            <div class="highlight-item">
-              <b>跨場域實務經驗</b>
-              <p>理解室外站點、集中式機房與室內空間的工程介面，因應不同場地與營運限制。</p>
+            <div class="company-highlights-panel">
+              <div class="intro-highlights">
+                <div class="highlight-item">
+                  <b>單一合作窗口</b>
+                </div>
+                <div class="highlight-item">
+                  <b>跨場域實務經驗</b>
+                </div>
+                <div class="highlight-item">
+                  <b>多品牌設備經驗</b>
+                </div>
+              </div>
             </div>
-            <div class="highlight-item">
-              <b>多品牌設備經驗</b>
-              <p>具備 Ericsson、Nokia 與 OneWeb 設備的安裝及測試經驗。</p>
+          </div>
+          <div class="company-carousel-toolbar">
+            <span class="company-carousel-count">01 / 16</span>
+            <div class="company-carousel-progress" aria-hidden="true"><span></span></div>
+            <div class="company-carousel-actions">
+              <button class="company-carousel-prev" type="button" aria-label="上一張圖片">←</button>
+              <button class="company-carousel-next" type="button" aria-label="下一張圖片">→</button>
             </div>
           </div>
         </div>

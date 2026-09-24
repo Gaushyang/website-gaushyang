@@ -1,0 +1,26 @@
+/* Shared corner language for contained surfaces; structural rows and icons stay linear. */
+.signal-home #solutions .solution-card,
+.signal-home #solutions .confidentiality-note,
+.signal-home #strength .credentials-box,
+.signal-home #strength .partner-section,
+.signal-home #strength .partner-stage,
+.signal-home #about .sustainability-grid,
+.signal-home #about .sustainability-photo-card,
+.signal-home .contact-dialog {
+  border-radius: 28px 8px 28px 8px !important;
+}
+
+.signal-home #strength .partner-card,
+.signal-home .button,
+.signal-home .nav-contact-btn,
+.signal-home .company-carousel-actions button,
+.signal-home .contact-primary-button,
+.signal-home .contact-secondary-button {
+  border-radius: 12px 4px 12px 4px !important;
+}
+
+.signal-home #solutions .solution-card,
+.signal-home #about .sustainability-photo-card,
+.signal-home #strength .partner-stage {
+  overflow: hidden;
+}
